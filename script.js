@@ -44,3 +44,50 @@ if ("IntersectionObserver" in window) {
     });
 }
 
+
+// =====================================
+// DESCARGAR PORTAFOLIO COMO PDF
+// =====================================
+
+const downloadButton = document.getElementById("downloadCV");
+
+if (downloadButton) {
+    downloadButton.addEventListener("click", function (e) {
+        e.preventDefault();
+
+        const element = document.querySelector("main");
+
+        const options = {
+            margin: [8, 8, 8, 8],
+
+            filename: "Jean-Paul-Hincapie-CV.pdf",
+
+            image: {
+                type: "jpeg",
+                quality: 0.98
+            },
+
+            html2canvas: {
+                scale: 2,
+                useCORS: true,
+                backgroundColor: "#090611",
+                scrollY: 0
+            },
+
+            jsPDF: {
+                unit: "mm",
+                format: "a4",
+                orientation: "portrait"
+            },
+
+            pagebreak: {
+                mode: ["css", "legacy"]
+            }
+        };
+
+        html2pdf()
+            .set(options)
+            .from(element)
+            .save();
+    });
+}

@@ -1187,3 +1187,44 @@ footer {
         transition-duration: 0.01ms !important;
     }
 }
+
+
+/* =====================================
+   CONFIGURACIÓN PARA DESCARGAR EL CV
+===================================== */
+
+@media print {
+    body {
+        background: #090611 !important;
+        color: #EDE9FE !important;
+        -webkit-print-color-adjust: exact !important;
+        print-color-adjust: exact !important;
+    }
+
+    .site-header,
+    .hero-bottom,
+    .contact-buttons,
+    .back-top,
+    #downloadCV {
+        display: none !important;
+    }
+
+    .section,
+    .hero,
+    footer,
+    .project-card,
+    .technology-card,
+    .about-card,
+    .timeline-item {
+        break-inside: avoid;
+        page-break-inside: avoid;
+    }
+
+    .container {
+        max-width: 100% !important;
+    }
+
+    a {
+        text-decoration: none !important;
+    }
+}
