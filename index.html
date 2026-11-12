@@ -1,0 +1,490 @@
+
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Jean Paul Hincapié | Desarrollador de Software</title>
+    <meta name="description" content="Portafolio personal de Jean Paul Hincapié Ruiz, aprendiz de Análisis y Desarrollo de Software.">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+
+    <!-- NAVBAR -->
+    <header class="site-header">
+        <nav class="navbar container">
+            <a href="#inicio" class="logo">
+                <span class="logo-icon">J</span>
+                <span class="logo-name">Jean Paul<span class="logo-dot">.</span></span>
+            </a>
+
+            <ul class="nav-links">
+                <li><a href="#inicio" class="active">Inicio</a></li>
+                <li><a href="#sobre-mi">Sobre mí</a></li>
+                <li><a href="#tecnologias">Tecnologías</a></li>
+                <li><a href="#proyectos">Proyectos</a></li>
+                <li><a href="#formacion">Formación</a></li>
+            </ul>
+
+            <a href="#contacto" class="nav-contact">
+                Hablemos <span>↗</span>
+            </a>
+        </nav>
+    </header>
+
+    <main>
+        <!-- INICIO -->
+        <section class="hero" id="inicio">
+            <div class="container hero-grid">
+
+                <div class="hero-content">
+                    <div class="availability">
+                        <span class="status-dot"></span>
+                        Desarrollador en formación
+                    </div>
+
+                    <p class="greeting">¡Hola! Soy</p>
+
+                    <h1>
+                        Jean Paul
+                        <span class="gradient-text">Hincapié.</span>
+                    </h1>
+
+                    <h2>Aprendiz de Análisis y Desarrollo de Software</h2>
+
+                    <p class="hero-description">
+                        Me apasiona la programación y el desarrollo de
+                        soluciones tecnológicas. Disfruto transformar ideas
+                        en proyectos funcionales, aprender nuevas tecnologías
+                        y enfrentar desafíos que me permitan crecer como
+                        desarrollador.
+                    </p>
+
+                    <div class="hero-buttons">
+                        <a href="#proyectos" class="btn btn-primary">
+                            Ver mis proyectos ↗
+                        </a>
+
+                        <a href="#contacto" class="btn btn-outline">
+                            Contactarme
+                        </a>
+                    </div>
+
+                    <div class="hero-location">
+                        <span>⌖</span>
+                        Itagüí, Antioquia, Colombia
+                    </div>
+                </div>
+
+                <!-- FOTO DE PERFIL -->
+                <div class="profile-container">
+                    <div class="profile-decoration"></div>
+
+                    <div class="profile-card">
+                        <div class="profile-image-container">
+                            <img
+                                id="profileImage"
+                                src="assets/img/perfil.jpg"
+                                alt="Fotografía de Jean Paul"
+                            >
+
+                            <div class="profile-placeholder" id="profilePlaceholder">
+                                <span>JP</span>
+                                <small>Tu fotografía</small>
+                            </div>
+                        </div>
+
+                        <label for="imageUpload" class="upload-button">
+                            ＋ Cargar fotografía
+                        </label>
+
+                        <input
+                            type="file"
+                            id="imageUpload"
+                            accept="image/jpeg,image/png,image/webp"
+                            hidden
+                        >
+
+                        <p class="profile-caption">
+                            Desarrollador en constante aprendizaje.
+                        </p>
+                    </div>
+
+                    <div class="floating-card">
+                        <span class="floating-icon">💻</span>
+                        <div>
+                            <strong>Software</strong>
+                            <small>Desarrollo y tecnología</small>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="hero-bottom">
+                <span>SCROLL PARA EXPLORAR</span>
+                <span class="scroll-line"></span>
+            </div>
+        </section>
+
+        <!-- SOBRE MÍ -->
+        <section class="section" id="sobre-mi">
+            <div class="container">
+                <div class="section-heading">
+                    <span class="section-label">CONÓCEME</span>
+                    <h2>Sobre <span>mí.</span></h2>
+                    <p>Un poco sobre mi perfil y mi forma de trabajar.</p>
+                </div>
+
+                <div class="about-grid">
+                    <div class="about-text">
+                        <h3>Me gusta aprender, construir y encontrar soluciones.</h3>
+
+                        <p>
+                            Actualmente soy aprendiz del programa de
+                            Análisis y Desarrollo de Software del SENA.
+                            Mi interés por la tecnología me ha llevado a
+                            explorar diferentes herramientas y lenguajes
+                            de programación, buscando desarrollar
+                            aplicaciones que respondan a necesidades reales.
+                        </p>
+
+                        <p>
+                            Me interesa especialmente el desarrollo backend,
+                            la construcción de aplicaciones web, el manejo
+                            de bases de datos y la automatización de procesos.
+                            Considero que la programación requiere
+                            constancia, pensamiento lógico y disposición
+                            para aprender continuamente.
+                        </p>
+
+                        <p>
+                            Me gusta llevar los conocimientos teóricos
+                            a la práctica mediante proyectos personales
+                            y académicos, donde puedo experimentar,
+                            equivocarme y mejorar mis habilidades.
+                        </p>
+                    </div>
+
+                    <div class="about-card">
+                        <h3>Información general</h3>
+
+                        <div class="info-item">
+                            <span>Nombre</span>
+                            <strong>Jean Paul Hincapié Ruiz</strong>
+                        </div>
+
+                        <div class="info-item">
+                            <span>Ubicación</span>
+                            <strong>Itagüí, Colombia</strong>
+                        </div>
+
+                        <div class="info-item">
+                            <span>Formación</span>
+                            <strong>Aprendiz SENA</strong>
+                        </div>
+
+                        <div class="info-item">
+                            <span>Área</span>
+                            <strong>Desarrollo de software</strong>
+                        </div>
+
+                        <div class="info-item">
+                            <span>Intereses</span>
+                            <strong>Backend y desarrollo web</strong>
+                        </div>
+
+                        <div class="info-item">
+                            <span>Idiomas</span>
+                            <strong>Español e inglés en formación</strong>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- TECNOLOGÍAS -->
+        <section class="section section-alt" id="tecnologias">
+            <div class="container">
+                <div class="section-heading">
+                    <span class="section-label">HERRAMIENTAS</span>
+                    <h2>Tecnologías que <span>utilizo.</span></h2>
+                    <p>Herramientas con las que he trabajado durante mi formación y proyectos.</p>
+                </div>
+
+                <div class="technology-grid">
+                    <article class="technology-card">
+                        <span class="tech-icon">Py</span>
+                        <h3>Python</h3>
+                        <p>Programación y lógica de desarrollo.</p>
+                    </article>
+
+                    <article class="technology-card">
+                        <span class="tech-icon">Dj</span>
+                        <h3>Django</h3>
+                        <p>Desarrollo de aplicaciones web backend.</p>
+                    </article>
+
+                    <article class="technology-card">
+                        <span class="tech-icon">HT</span>
+                        <h3>HTML</h3>
+                        <p>Estructuración de páginas web.</p>
+                    </article>
+
+                    <article class="technology-card">
+                        <span class="tech-icon">CS</span>
+                        <h3>CSS</h3>
+                        <p>Diseño y estilos de interfaces.</p>
+                    </article>
+
+                    <article class="technology-card">
+                        <span class="tech-icon">JS</span>
+                        <h3>JavaScript</h3>
+                        <p>Interactividad y funcionalidades web.</p>
+                    </article>
+
+                    <article class="technology-card">
+                        <span class="tech-icon">My</span>
+                        <h3>MySQL</h3>
+                        <p>Gestión y consulta de bases de datos.</p>
+                    </article>
+
+                    <article class="technology-card">
+                        <span class="tech-icon">Fa</span>
+                        <h3>FastAPI</h3>
+                        <p>Desarrollo y exploración de APIs.</p>
+                    </article>
+
+                    <article class="technology-card">
+                        <span class="tech-icon">n8</span>
+                        <h3>n8n</h3>
+                        <p>Automatización de procesos y flujos.</p>
+                    </article>
+                </div>
+            </div>
+        </section>
+
+        <!-- PROYECTOS -->
+        <section class="section" id="proyectos">
+            <div class="container">
+                <div class="section-heading">
+                    <span class="section-label">MI TRABAJO</span>
+                    <h2>Proyectos <span>destacados.</span></h2>
+                    <p>Algunos de los proyectos en los que he trabajado durante mi proceso de aprendizaje.</p>
+                </div>
+
+                <div class="projects-grid">
+                    <article class="project-card featured-project">
+                        <div class="project-top">
+                            <span class="project-number">01</span>
+                            <span class="project-type">PROYECTO PRINCIPAL</span>
+                        </div>
+
+                        <div class="project-icon">✦</div>
+
+                        <h3>Premium Eventos JM</h3>
+
+                        <p>
+                            Desarrollo de una plataforma web para automatizar
+                            la gestión comercial de una empresa de organización
+                            y alquiler de servicios para eventos.
+                        </p>
+
+                        <p>
+                            Incluye catálogo de servicios, solicitudes de
+                            cotización, gestión de clientes, panel administrativo
+                            y administración de solicitudes.
+                        </p>
+
+                        <div class="project-tags">
+                            <span>Python</span>
+                            <span>Django</span>
+                            <span>MySQL</span>
+                            <span>JavaScript</span>
+                            <span>Bootstrap</span>
+                        </div>
+
+                        <div class="project-footer">
+                            <span>Desarrollo web full stack</span>
+                            <span>↗</span>
+                        </div>
+                    </article>
+
+                    <article class="project-card">
+                        <div class="project-top">
+                            <span class="project-number">02</span>
+                            <span class="project-type">PRÁCTICA</span>
+                        </div>
+
+                        <div class="project-icon">⌘</div>
+
+                        <h3>Integración Django + FastAPI</h3>
+
+                        <p>
+                            Ejercicio práctico orientado a integrar Django
+                            con FastAPI para consultar información de
+                            productos mediante endpoints y visualizar
+                            estadísticas en un dashboard.
+                        </p>
+
+                        <div class="project-tags">
+                            <span>Python</span>
+                            <span>Django</span>
+                            <span>FastAPI</span>
+                            <span>REST API</span>
+                        </div>
+
+                        <div class="project-footer">
+                            <span>Backend y APIs</span>
+                            <span>↗</span>
+                        </div>
+                    </article>
+
+                    <article class="project-card">
+                        <div class="project-top">
+                            <span class="project-number">03</span>
+                            <span class="project-type">EXPLORACIÓN</span>
+                        </div>
+
+                        <div class="project-icon">⚡</div>
+
+                        <h3>Automatización de procesos</h3>
+
+                        <p>
+                            Exploración de flujos de automatización con n8n
+                            y servicios web, conectando aplicaciones mediante
+                            webhooks para facilitar tareas y procesos.
+                        </p>
+
+                        <div class="project-tags">
+                            <span>n8n</span>
+                            <span>Webhooks</span>
+                            <span>Python</span>
+                            <span>APIs</span>
+                        </div>
+
+                        <div class="project-footer">
+                            <span>Automatización</span>
+                            <span>↗</span>
+                        </div>
+                    </article>
+                </div>
+            </div>
+        </section>
+
+        <!-- FORMACIÓN -->
+        <section class="section section-alt" id="formacion">
+            <div class="container">
+                <div class="section-heading">
+                    <span class="section-label">MI CAMINO</span>
+                    <h2>Formación y <span>aprendizaje.</span></h2>
+                    <p>Mi proceso de crecimiento académico y tecnológico.</p>
+                </div>
+
+                <div class="timeline">
+                    <article class="timeline-item">
+                        <div class="timeline-dot"></div>
+                        <span class="timeline-date">FORMACIÓN ACTUAL</span>
+                        <h3>Análisis y Desarrollo de Software</h3>
+                        <h4>Servicio Nacional de Aprendizaje - SENA</h4>
+                        <p>
+                            Formación orientada al análisis de requerimientos,
+                            diseño, desarrollo, bases de datos, programación
+                            y construcción de soluciones de software.
+                        </p>
+                    </article>
+
+                    <article class="timeline-item">
+                        <div class="timeline-dot"></div>
+                        <span class="timeline-date">APRENDIZAJE COMPLEMENTARIO</span>
+                        <h3>Marketing Digital</h3>
+                        <h4>Formación complementaria</h4>
+                        <p>
+                            Conocimientos relacionados con herramientas
+                            y conceptos de marketing digital.
+                        </p>
+                    </article>
+
+                    <article class="timeline-item">
+                        <div class="timeline-dot"></div>
+                        <span class="timeline-date">APRENDIZAJE CONTINUO</span>
+                        <h3>Desarrollo de habilidades técnicas</h3>
+                        <h4>Proyectos prácticos y aprendizaje autónomo</h4>
+                        <p>
+                            Profundización en Python, Django, bases de datos,
+                            desarrollo backend, APIs y automatización
+                            de procesos.
+                        </p>
+                    </article>
+                </div>
+            </div>
+        </section>
+
+        <!-- CONTACTO -->
+        <section class="section" id="contacto">
+            <div class="container">
+                <div class="contact-card">
+                    <span class="section-label">CONTACTO</span>
+
+                    <h2>
+                        ¿Tienes una idea?
+                        <span class="gradient-text">Hablemos.</span>
+                    </h2>
+
+                    <p>
+                        Siempre estoy interesado en aprender, compartir
+                        conocimientos y participar en nuevos proyectos
+                        relacionados con la tecnología.
+                    </p>
+
+                    <div class="contact-buttons">
+                        <a href="mailto:TU_CORREO@gmail.com" class="btn btn-primary">
+                            Enviarme un correo ↗
+                        </a>
+
+                        <a
+                            href="https://github.com/TU_USUARIO"
+                            target="_blank"
+                            rel="noopener noreferrer"
+                            class="btn btn-outline"
+                        >
+                            GitHub ↗
+                        </a>
+
+                        <a
+                            href="https://www.linkedin.com/in/TU_USUARIO/"
+                            target="_blank"
+                            rel="noopener noreferrer"
+                            class="btn btn-outline"
+                        >
+                            LinkedIn ↗
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- FOOTER -->
+    <footer>
+        <div class="container footer-content">
+            <a href="#inicio" class="logo footer-logo">JP<span>.</span></a>
+
+            <p>
+                © <span id="year"></span>
+                Jean Paul Hincapié Ruiz. Desarrollado con dedicación.
+            </p>
+
+            <a href="#inicio" class="back-top">Volver arriba ↑</a>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
