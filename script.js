@@ -113,3 +113,4 @@ if ("IntersectionObserver" in window) {
         navObserver.observe(section);
     });
 }
+
